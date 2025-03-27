@@ -16,7 +16,12 @@
         devShell = pkgs.mkShellNoCC {
           buildInputs = with pkgs; [
             # tools
+            file
             gcc
+            bc
+            rsync
+            unzip
+            libxcrypt
 
             # AArch64 cross toolchain (binaries: aarch64-unknown-linux-gnu-gcc, etc.)
             crossPkgs.buildPackages.binutils
