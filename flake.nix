@@ -16,16 +16,20 @@
         devShell = pkgs.mkShellNoCC {
           buildInputs = with pkgs; [
             # tools
-            file
-            gcc
-            bc
-            rsync
-            unzip
-            libxcrypt
+            # file
+            # gcc
+            # bc
+            # rsync
+            # unzip
+            # libxcrypt
+            # patchelf
+            # glibc
+            # eudev
+            # ncurses
 
             # AArch64 cross toolchain (binaries: aarch64-unknown-linux-gnu-gcc, etc.)
-            crossPkgs.buildPackages.binutils
-            crossPkgs.buildPackages.gcc
+            # crossPkgs.buildPackages.binutils
+            # crossPkgs.buildPackages.gcc
           ];
 
           shellHook = ''
